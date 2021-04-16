@@ -1,0 +1,43 @@
+
+Ÿ
+java:S1186Ş"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÑíÍ8Ø¶¤ğˆ/
+l
+java:S1192"ODefine a constant instead of duplicating this literal "Crie um agente" 4 times.(¦›şë8çÔ˜ñˆ/
+Ÿ
+java:S1186ı"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÑíÍ8Ø¶¤ğˆ/
+X
+java:S1481®"5Remove this unused "rcvInvitationBtn" local variable.(ïü©àùÿÿÿÿ8Ø¶¤ğˆ/
+M
+java:S1066©"/Merge this if statement with the enclosing one.(‘Íƒ¶8¤ÑÌñˆ/
+M
+java:S1659A"2Declare "retrievedCredentials" on a separate line.(òÒºßüÿÿÿÿ
+V	java:S106ª"9Replace this use of System.out or System.err by a logger.(„¶¿¼8®çÛ¡ˆ/
+
+java:S1186á"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ô—½48Ø¶¤ğˆ/
+
+java:S1186ğ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ô—½48Ø¶¤ğˆ/
+T
+java:S1128"7Remove this unused import 'android.widget.RadioButton'.(®é«8§ÉÔîˆ/
+
+java:S1186€"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ô—½48Ø¶¤ğˆ/
+L
+java:S1659>"/Declare "btnGetConnections" on a separate line.(ØëÔã8ñ‚Ñğˆ/
+g
+java:S1854®"DRemove this useless assignment to local variable "rcvInvitationBtn".(ïü©àùÿÿÿÿ8Ø¶¤ğˆ/
+N
+java:S1659>"1Declare "btnAcceptInvitation" on a separate line.(ØëÔã8 ã£ğˆ/
+O	java:S106‚"9Replace this use of System.out or System.err by a logger.(„¶¿¼
+Ÿ
+java:S1186í"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÑíÍ8Ø¶¤ğˆ/
+V	java:S106"9Replace this use of System.out or System.err by a logger.(„¶¿¼8Ø×ñˆ/
+E
+java:S1659A"*Declare "websocketURL" on a separate line.(òÒºßüÿÿÿÿ
+X
+java:S1161Ø":Add the "@Override" annotation above this method signature(ŒÒÊÄ8Ø¶¤ğˆ/
+D
+java:S1659)")Declare "lastMessage" on a separate line.(¬ˆç‘ıÿÿÿÿ
+M
+java:S1066ê"/Merge this if statement with the enclosing one.(‘Íƒ¶8Ø×ñˆ/
+M
+java:S1066Œ"/Merge this if statement with the enclosing one.(‘Íƒ¶8Ø×ñˆ/
+V	java:S106ë"9Replace this use of System.out or System.err by a logger.(„¶¿¼8Ø×ñˆ/

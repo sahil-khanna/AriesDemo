@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <CheckBox
+                android:id="@+id/use_local_agent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:text="Use Local Agent"
+                android:checked="true"/>
+
+            <EditText
+                android:id="@+id/agent_url"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:hint="@string/placeholder_url"
+                android:layout_marginTop="23dp"
+                android:layout_below="@id/use_local_agent"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/websocket_url"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:hint="ws://agent.websocket.url/ws"
+                android:layout_marginTop="23dp"
+                android:layout_below="@id/agent_url"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button_newAgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/websocket_url"
+                android:layout_alignParentTop="false"
+                android:layout_marginTop="19dp"
+                android:text="@string/new_agent" />
+
+            <Button
+                android:id="@+id/button_get_credentials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_newAgent"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="21dp"
+                android:enabled="false"
+                android:text="@string/get_credentials"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/resp_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_get_credentials"
+                android:layout_marginTop="15dp"
+
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:shadowColor="@color/cardview_light_background"
+                android:text="Retrieved Credentials"
+                android:textSize="15sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/resp_label"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:id="@+id/scroll"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/credentials"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Result" />
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="21dp">
+
+                <TextView
+                    android:id="@+id/notif_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-2dp"
+                    android:layout_marginLeft="-2dp"
+                    android:shadowColor="@color/cardview_light_background"
+                    android:text="JSON DATA"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Error"
+                    android:textColor="#FF0000"
+                    android:textStyle="bold"
+                    android:paddingStart="10dp"
+                    android:textAllCaps="true"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/didex_receiveInvitation_req"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notif_test"
+                android:inputType="textMultiLine" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/notification_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_receiveInvitation"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="22dp"
+
+                android:text="Notification Result" />
+
+
+            <Button
+                android:id="@+id/button_receiveInvitation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/didex_receiveInvitation_req"
+                android:text="Receive Invitation" />
+
+
+            <Button
+                android:id="@+id/btn_accept_invitation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept Invitation" />
+
+
+            <Button
+                android:id="@+id/btn_create_invitation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/didex_receiveInvitation_req"
+                android:text="Create Invitation"/>
+
+            <Button
+                android:id="@+id/btn_accept_exchange_requested"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept Exchange Request"/>
+
+
+            <Button
+                android:id="@+id/btn_get_connections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get connections"
+              />
+
+
+            <TextView
+                android:id="@+id/txt_connections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="115dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:layout_marginTop="22dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
